@@ -32,7 +32,7 @@ The AWS State Machine orchestrates the ETL process by linking the following Lamb
 
 ### Step 1: Set Up AWS Credentials
 
-Ensure your AWS credentials are configured correctly in `~/.aws/credentials`.
+Ensure your AWS credentials are configured correctly in GitHub's Secret's Manager. 
 
 ### Step 2: Initialize Terraform
 
