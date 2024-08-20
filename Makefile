@@ -24,8 +24,7 @@ create-environment:
 
 # Execute python related functionalities from within the project's environment
 requirements:
-	$(call execute_in_env, $(PIP) install -r requirements.txt)
-
+	$(call execute_in_env, $(PIP) install requests -t dependencies/)
 requirements: create-environment
 
 ################################################################################################################
