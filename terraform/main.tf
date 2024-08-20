@@ -5,6 +5,13 @@ terraform {
       version = "~> 5.0"
     }
   }
+
+  backend "s3" {
+  bucket = "currency-exchange-backend"
+  key    = "state/terraform.tfstate"
+  region = "eu-west-2"
+
+  }
 }
 
 provider "aws" {
