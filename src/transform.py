@@ -1,7 +1,7 @@
 def lambda_handler(event, context):
     """Transforms the data to give the required rates against USD.
 
-    The output should include the reverse rate to 6 decimal places.
+    The  output should include the reverse rate to 6 decimal places.
 
     Args:
         event: a dictionary in the form output by the extract function.
