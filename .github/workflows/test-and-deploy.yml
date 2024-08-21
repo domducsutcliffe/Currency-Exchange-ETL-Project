@@ -48,3 +48,7 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         working-directory: ./terraform
         run: terraform apply --auto-approve
+      - name: Destroy
+        if: ${{ github.ref == 'refs/heads/main' }}
+        working-directory: ./terraform
+        run: terraform destroy --auto-approve
